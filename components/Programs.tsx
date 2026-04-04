@@ -1,6 +1,6 @@
 export default function Programs() {
   return (
-    <section className="py-24 bg-[#f7f4e1]">
+    <section id="programs" className="py-24 bg-[#f7f4e1]">
       <div className="max-w-7xl mx-auto px-8">
         {/* Heading */}
         <div className="text-center mb-16">

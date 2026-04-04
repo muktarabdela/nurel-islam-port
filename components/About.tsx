@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="py-24 bg-[#fdfae7]">
+    <section id="about" className="py-24 bg-[#fdfae7]">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           {/* LEFT CONTENT */}

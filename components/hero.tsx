@@ -1,6 +1,9 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-[870px] flex items-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-[870px] flex items-center overflow-hidden"
+    >
       {/* Background Image + Gradient */}
       <div className="absolute inset-0 z-0">
         <img
@@ -21,7 +24,7 @@ export default function Hero() {
           </span>
 
           <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6">
-            Nurel Islam Medresa
+            ኑረል ኢስላም መድረሳ
           </h1>
 
           <p className="text-xl md:text-2xl text-[#c1ecd4] max-w-xl mb-10 leading-relaxed">
