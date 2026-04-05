@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link"; // Brought back Next.js Link for fast cross-page routing
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,54 +10,55 @@ export default function Navbar() {
     <nav className="sticky top-0 w-full z-50 bg-[#fdfae7]/80 backdrop-blur-md transition-all duration-300">
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <a
+        <Link
           className="font-serif text-2xl font-bold text-[#012d1d]"
-          href="#home"
+          href="/#home"
         >
           Nurel Islam Medresa
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
           <div className="flex gap-8">
-            <a
-              href="#home"
+            {/* Notice how all hrefs now start with a / */}
+            <Link
+              href="/#home"
               className="text-[#7d562d] font-bold border-b-2 border-[#7d562d] pb-1 text-sm tracking-wide cursor-pointer"
             >
               Home
-            </a>
-            <a
-              href="#about"
+            </Link>
+            <Link
+              href="/#about"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
             >
               About
-            </a>
-            <a
-              href="#programs"
+            </Link>
+            <Link
+              href="/#programs"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
             >
               Programs
-            </a>
-            <a
-              href="#charity"
+            </Link>
+            <Link
+              href="/#charity"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
             >
               Charity
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/#contact"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
             >
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Donate Button */}
-          <a href="#donate">
+          <Link href="/#donate">
             <button className="bg-[#012d1d] text-white px-6 py-2 rounded-lg font-medium hover:scale-95 transition-all duration-200 cursor-pointer">
               Donate
             </button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Button */}
@@ -71,41 +73,41 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {open && (
         <div className="md:hidden px-8 pb-4 flex flex-col gap-4 bg-[#fdfae7]">
-          <a
-            href="#home"
+          <Link
+            href="/#home"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
             Home
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            href="/#about"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
             About
-          </a>
-          <a
-            href="#programs"
+          </Link>
+          <Link
+            href="/#programs"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
             Programs
-          </a>
-          <a
-            href="#charity"
+          </Link>
+          <Link
+            href="/#charity"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
             Charity
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/#contact"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </nav>
