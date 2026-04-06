@@ -49,7 +49,7 @@ export default function Hero() {
           <div className="aspect-square rounded-xl overflow-hidden shadow-2xl transform rotate-3">
             <img
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUvGZMwhxjbP7Ypinqed0I588a6L2lBezYhqMZDCfWswgANOuA3l5z4ULamCyfLEMQLXEjc7r9JX_x1WfaZ-Vfqpt7wt1zIRurqEJps_3DVNlQk3pfLT4KMoLJy1Qg4v5y2hEOr4CI1macJf43wxMXdX8q4T3Gbc_vsaOEfq5OYyDpb5XxKJ6iZqVKUM4XHfAwtBMe4ERxRRR54b1_rQIZ1JlS9IxwXc7B13vFsteAhHsqtf9Cu0zzwDRrpmaV-KQW4gFlIiIojVf7"
+              src="/hero.png"
               alt=""
             />
           </div>
