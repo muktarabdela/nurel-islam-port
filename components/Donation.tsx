@@ -1,17 +1,21 @@
+import React from "react";
+
 export default function Donation() {
   return (
     <section id="donate" className="py-24">
       <div className="max-w-7xl mx-auto px-8">
         <div className="bg-primary rounded-xl overflow-hidden flex flex-col lg:flex-row shadow-2xl">
-          {/* Image Side */}
-          <div className="lg:w-1/2 relative h-64 lg:h-auto">
-            <img
-              className="w-full h-full object-cover"
-              alt="Warm hands holding a small glowing lantern or light, symbolizing hope and charity in a dark setting"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCENUpL1pPpQHRNBEE1byQEK-bMn-DuMbRiI2vSZ5sNT7sevgZT3qPzK3NZA7PbsmYALAXrEf7DEo3_qvOK6hkvDHBQm_wz7YmMzNyS8V8EnygNW0cojNZVDBHoBI20wILll-2aMHZzaG1cZluTUc5GRCqI_NCLUu84QVHn66bLpZtrcYXcdq8fVTf6_N0P1GFO-bAfxOL3JRFnfAm73LbnfWWOWYd_zOfzq5G4sa-kLZx3tPbO3u7Kff56gT2QFzL8QzoI5YNi2tG"
-            />
-            {/* Overlay Effect */}
-            <div className="absolute inset-0 bg-secondary/20 mix-blend-overlay"></div>
+          {/* Video Side */}
+          {/* h-72 for mobile, lg:h-auto to stretch and match the right side's height on desktop */}
+          <div className="lg:w-1/2 relative h-72 lg:h-auto bg-black m-10 rounded-xl">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/LXb3EKWsInQ?controls=1&rel=0&modestbranding=1"
+              title="Donation Campaign Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
 
           {/* Content Side */}
@@ -28,7 +32,7 @@ export default function Donation() {
             <div className="space-y-6 mb-10">
               {/* List Item 1 */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-white">
                     done
                   </span>
@@ -40,7 +44,7 @@ export default function Donation() {
 
               {/* List Item 2 */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shrink-0">
                   <span className="material-symbols-outlined text-white">
                     done
                   </span>
@@ -50,10 +54,7 @@ export default function Donation() {
                 </span>
               </div>
             </div>
-
-            <button className="w-full md:w-auto bg-surface text-primary px-10 py-5 rounded-lg font-bold text-xl hover:bg-secondary-fixed transition-colors shadow-lg">
-              Donate Now
-            </button>
+            
           </div>
         </div>
       </div>

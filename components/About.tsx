@@ -2,31 +2,29 @@ export default function About() {
   return (
     <section id="about" className="py-24 bg-[#fdfae7]">
       <div className="max-w-7xl mx-auto px-8">
+        {/* TOP ROW: Text and Cards (Unchanged Design) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           {/* LEFT CONTENT */}
           <div className="lg:col-span-5">
             <h2 className="text-4xl font-serif font-bold text-[#012d1d] mb-8">
-              Guided by Wisdom, Rooted in Faith
+              ትንሽ ስለ ኑረል ኢስላም መድረሳ
             </h2>
 
             <div className="w-20 h-1 bg-[#7d562d] mb-8"></div>
 
             <p className="text-lg text-[#414844] leading-relaxed mb-6">
-              Nurel Islam Medresa stands as a beacon of classical Islamic
-              education in the modern world. Our mission is to preserve the rich
-              intellectual heritage of Islam while empowering students to
-              navigate contemporary challenges with spiritual clarity.
-            </p>
-
-            <p className="text-lg text-[#414844] leading-relaxed">
-              We believe that true education transforms the soul. Through
-              rigorous study and community service, we cultivate leaders who
-              embody the values of compassion, integrity, and lifelong learning.
+              ኑረል ኢስላም መድረሳ ብዙ እናቶች እና አባቶች አሊፍ ብለው ጀምረው ቁርአን እስከማኽተም ደርሰዋል።
+              በአካባቢ ላይ የሚገኙ በመቶዎች የሚቆጠሩ ህጻናትና ወጣቶችም ከውቀት ማዕድ ቀስመዋል በመድረሳዉ ውስጥ
+              የሚሰጡ የእውቀት ዘርፎች ከቃይደቱን ኖራንያ ጀምሮ ቁርዓን እስከ መጨረስ ከአርበኢን ጀምሮ እስከ ትልልቅ
+              የሀዲስ ኪታቦች ነህው ሰርፍ ኢምላእ እና ሌሎችም የአረብኛ ቋንቋ ትምህርቶች በፊቅህ ዘርፍ ከሰፊና ጀምሮ
+              እስከ ትልልቅ የፊቅህ ኪታቦች ኢልመል ሀዲስ፣ ኢልመል ፈራኢድ ፣ ኢልመ ኡሱሊል ፊቅህ፣ ተፍሲር እና
+              ሌሎችም ኢልሞች እየተሰጡ ይገኛል ኑረል ኢስላም መድረሳ ከግለሰብ ቤት ተጀምሮ፣የተለያዩ ተግዳሮቶችን
+              በማለፍ ወደ መድረስነት ተሻግሯል ወደፊትም በአላህ ፍቃድ ወደ ከፍታ ይቀጥላል።
             </p>
           </div>
 
           {/* RIGHT CARDS */}
-          <div className="lg:col-span-7 grid grid-cols-2 gap-4">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {/* Card 1 */}
             <div className="bg-[#f7f4e1] p-8 rounded-xl hover:bg-white transition-all duration-300 shadow-sm">
               <span className="material-symbols-outlined text-4xl text-[#7d562d] mb-4">
@@ -42,7 +40,7 @@ export default function About() {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-[#f7f4e1] p-8 rounded-xl hover:bg-white transition-all duration-300 shadow-sm mt-8">
+            <div className="bg-[#f7f4e1] p-8 rounded-xl hover:bg-white transition-all duration-300 shadow-sm sm:mt-8">
               <span className="material-symbols-outlined text-4xl text-[#7d562d] mb-4">
                 volunteer_activism
               </span>
@@ -69,7 +67,7 @@ export default function About() {
             </div>
 
             {/* Card 4 */}
-            <div className="bg-[#f7f4e1] p-8 rounded-xl hover:bg-white transition-all duration-300 shadow-sm mt-8">
+            <div className="bg-[#f7f4e1] p-8 rounded-xl hover:bg-white transition-all duration-300 shadow-sm sm:mt-8">
               <span className="material-symbols-outlined text-4xl text-[#7d562d] mb-4">
                 groups
               </span>
@@ -81,6 +79,19 @@ export default function About() {
                 wisdom.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-20 max-w-3xl mx-auto">
+          <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-black">
+            <iframe
+              className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+              src="https://www.youtube.com/embed/LXb3EKWsInQ?controls=1&rel=0&modestbranding=1"
+              title="Charity Impact Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>

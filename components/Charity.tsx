@@ -58,12 +58,12 @@ export default function Charity() {
           {/* Item 2: VIDEO EMBED CARD (Spans 2 columns, 1 row) */}
           <div className="md:col-span-2 md:row-span-1 relative rounded-3xl overflow-hidden shadow-lg bg-black h-[300px] md:h-full group">
             {/* Floating Label (Pointer events none so it doesn't block video clicks) */}
-            <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-full text-white text-xs font-bold pointer-events-none z-20 flex items-center gap-1 shadow-sm">
+            {/* <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-full text-white text-xs font-bold pointer-events-none z-20 flex items-center gap-1 shadow-sm">
               <span className="material-symbols-outlined text-[14px]">
                 play_circle
               </span>
               Watch Our Impact
-            </div>
+            </div> */}
 
             <iframe
               className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"

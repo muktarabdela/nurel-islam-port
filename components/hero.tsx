@@ -19,28 +19,23 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* LEFT SIDE */}
         <div className="text-white">
-          <span className="inline-block px-4 py-1 rounded-full bg-[#7d562d] text-white text-sm font-semibold tracking-widest mb-6">
-            ESTABLISHED TRADITION
-          </span>
-
           <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6">
             ኑረል ኢስላም መድረሳ
           </h1>
 
           <p className="text-xl md:text-2xl text-[#c1ecd4] max-w-xl mb-10 leading-relaxed">
-            Serving the community through knowledge and charity. A sanctuary for
-            scholarly growth and spiritual enrichment.
+            ከህፃን እስከ አዋቂ በኢስላማዊ ተርብያ የታነፀ ትውልድን ማፍራት
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          {/* <div className="flex flex-wrap gap-4">
             <button className="bg-[#fdfae7] text-[#012d1d] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#ece9d6] transition">
-              Explore Programs
+              Explore Program
             </button>
 
             <button className="border border-white/30 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition">
               Learn Our History
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* RIGHT SIDE */}
@@ -57,8 +52,7 @@ export default function Hero() {
           {/* Floating Quote Card */}
           <div className="absolute -bottom-6 -left-6 bg-[#7d562d] p-8 rounded-xl shadow-xl max-w-xs transform -rotate-3">
             <p className="font-serif italic text-white text-lg">
-              "Knowledge is a light that Allah casts into the heart of
-              whomsoever He wills."
+              እውቀት ከንግግር እና ከተግባር ይቀድማል
             </p>
           </div>
         </div>

@@ -11,10 +11,11 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
         {/* Logo */}
         <Link
-          className="font-serif text-2xl font-bold text-[#012d1d]"
+          className="font-serif text-2xl font-bold tracking-wide hover:opacity-80 transition-opacity duration-300"
           href="/#home"
         >
-          Nurel Islam Medresa
+          <span className="text-[#012d1d]">ኑረል ኢስላም</span>{" "}
+          <span className="text-amber-600">መድረሳ</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -25,40 +26,40 @@ export default function Navbar() {
               href="/#home"
               className="text-[#7d562d] font-bold border-b-2 border-[#7d562d] pb-1 text-sm tracking-wide cursor-pointer"
             >
-              Home
+              ዋና ገፅ
             </Link>
             <Link
               href="/#about"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
             >
-              About
+              ስለኛ
             </Link>
             <Link
               href="/#programs"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
             >
-              Programs
+              ፕሮግራሞች
             </Link>
             <Link
               href="/#charity"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
             >
-              Charity
+              አርዳታ
             </Link>
             <Link
               href="/#contact"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
             >
-              Contact
+              ያግኙን
             </Link>
           </div>
 
           {/* Donate Button */}
-          <Link href="/#donate">
+          {/* <Link href="/#donate">
             <button className="bg-[#012d1d] text-white px-6 py-2 rounded-lg font-medium hover:scale-95 transition-all duration-200 cursor-pointer">
               Donate
             </button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Button */}
