@@ -24,31 +24,31 @@ export default function Navbar() {
             {/* Notice how all hrefs now start with a / */}
             <Link
               href="/#home"
-              className="text-[#7d562d] font-bold border-b-2 border-[#7d562d] pb-1 text-sm tracking-wide cursor-pointer"
+              className="text-[#7d562d] font-bold border-b-2 border-[#7d562d] pb-1 text-md tracking-wide cursor-pointer"
             >
               ዋና ገፅ
             </Link>
             <Link
               href="/#about"
-              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
+              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-md tracking-wide cursor-pointer"
             >
               ስለኛ
             </Link>
             <Link
               href="/#programs"
-              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
+              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-md tracking-wide cursor-pointer"
             >
               ፕሮግራሞች
             </Link>
             <Link
               href="/#charity"
-              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
+              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-md tracking-wide cursor-pointer"
             >
-              አርዳታ
+              ተጨማሪ
             </Link>
             <Link
               href="/#contact"
-              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-sm tracking-wide cursor-pointer"
+              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-md tracking-wide cursor-pointer"
             >
               ያግኙን
             </Link>
@@ -79,35 +79,35 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
-            Home
+            ዋና ገፅ
           </Link>
           <Link
             href="/#about"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
-            About
+            ስለኛ
           </Link>
           <Link
             href="/#programs"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
-            Programs
+            ፕሮግራሞች
           </Link>
           <Link
             href="/#charity"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
-            Charity
+            ተጨማሪ
           </Link>
           <Link
             href="/#contact"
             onClick={() => setOpen(false)}
             className="text-[#012d1d] font-medium py-2"
           >
-            Contact
+            ያግኙን
           </Link>
         </div>
       )}

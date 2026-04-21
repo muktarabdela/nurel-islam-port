@@ -36,7 +36,7 @@ export default function Programs() {
             <div className="w-full flex-grow rounded-2xl overflow-hidden shadow-inner bg-black min-h-[250px] md:min-h-0 relative">
               <iframe
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                src="https://www.youtube.com/embed/LXb3EKWsInQ?controls=1&rel=0&modestbranding=1"
+                src="https://www.youtube.com/embed/zniLjRrHXxo?controls=1&rel=0&modestbranding=1"
                 title="Charity Impact Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,8 +58,7 @@ export default function Programs() {
             <div className="relative z-20 max-w-sm text-white">
               <h3 className="text-3xl font-serif font-bold mb-3">የተለያዩ ኪታቦች</h3>
               <p className="text-[#c1ecd4] leading-relaxed">
-                Deep dives into Fiqh, Hadith, and Seerah using classical texts
-                and modern commentaries.
+                የተለያዩ የእውቀት ዘርፎችን እንደየደረጃው መስጠት
               </p>
             </div>
 
@@ -74,7 +73,7 @@ export default function Programs() {
             <div className="w-full aspect-video bg-black">
               <iframe
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                src="https://www.youtube.com/embed/LXb3EKWsInQ?controls=1&rel=0&modestbranding=1"
+                src="https://www.youtube.com/embed/r3UmgUpOR1Y?controls=1&rel=0&modestbranding=1"
                 title="Charity Impact Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -82,20 +81,18 @@ export default function Programs() {
               ></iframe>
             </div>
             {/* Bottom: Text Content */}
-            <div className="p-6 flex-grow flex flex-col justify-center bg-[#ece9d6]">
+            <div className="p-6 flex-grow flex flex-col justify-center bg-[#012d1d]">
               <div className="flex items-center gap-3 mb-2">
                 <div className="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-sm">
                   <span className="material-symbols-outlined text-[#7d562d]">
                     child_care
                   </span>
                 </div>
-                <h4 className="font-serif font-bold text-xl text-[#012d1d]">
-                  Youth Circle
+                <h4 className="font-serif font-bold text-xl text-white">
+                  የልጆች ጊዜ
                 </h4>
               </div>
-              <p className="text-[#414844] text-sm">
-                Foundation for the next generation.
-              </p>
+              <p className="text-white text-sm">በእውቀትና በተግባር የታነፀን ትውልድ መቅረፅ</p>
             </div>
           </div>
 
@@ -104,11 +101,11 @@ export default function Programs() {
             {/* Top: Video */}
             <div className="w-full aspect-video bg-black">
               <iframe
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
-                src="https://www.youtube.com/embed/LXb3EKWsInQ?controls=1&rel=0&modestbranding=1"
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/n7Tg4JqyPCY?controls=0&modestbranding=1&rel=0&showinfo=0"
                 title="Charity Impact Video"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; encrypted-media"
                 allowFullScreen
               ></iframe>
             </div>
@@ -120,12 +117,10 @@ export default function Programs() {
                     translate
                   </span>
                 </div>
-                <h4 className="font-serif font-bold text-xl">
-                  Arabic Language
-                </h4>
+                <h4 className="font-serif font-bold text-xl">አረብኛ ቋንቋ ትምህርት</h4>
               </div>
               <p className="text-[#c1ecd4] text-sm">
-                Unlock the language of the Quran.
+                ቁርአንን ለመገንዘብ አረብኛ ማወቅ መሰረታዊ ነገር ነው{" "}
               </p>
             </div>
           </div>

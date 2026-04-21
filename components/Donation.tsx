@@ -7,10 +7,10 @@ export default function Donation() {
         <div className="bg-primary rounded-xl overflow-hidden flex flex-col lg:flex-row shadow-2xl">
           {/* Video Side */}
           {/* h-72 for mobile, lg:h-auto to stretch and match the right side's height on desktop */}
-          <div className="lg:w-1/2 relative h-72 lg:h-auto bg-black m-10 rounded-xl">
+          <div className="lg:w-1/2 relative h-72 lg:h-auto bg-black aspect-video rounded-2xl overflow-hidden shadow-2xl border-2 border-white m-10">
             <iframe
               className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/LXb3EKWsInQ?controls=1&rel=0&modestbranding=1"
+              src="https://www.youtube.com/embed/JAfPaNPdyrU?controls=1&rel=0&modestbranding=1"
               title="Donation Campaign Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -21,12 +21,11 @@ export default function Donation() {
           {/* Content Side */}
           <div className="lg:w-1/2 p-12 lg:p-20 text-on-primary">
             <h2 className="text-4xl font-serif font-bold mb-6">
-              Invest in Eternal Reward
+              ከሞትን በኋላ የማይቋረጥ ሰደቃ{" "}
             </h2>
             <p className="text-on-primary-container text-lg leading-relaxed mb-10">
-              Your donation supports our educational programs, maintains our
-              facilities, and funds our community outreach. Be a part of the
-              Sadaqah Jariyah that continues to give for generations.
+              መድረሳው ውስጥ የሚሰጡ ፕሮግራሞች ብዙ ስለሆኑ የቦታ ጥበት እና ተጨማሪ ስራዎችን ለመስራት ሁሉም
+              የበኩሉን አስተዋጽኦ ቢሰጥ ለአኺራው መልካም ስራን በቀላሉ ማስቀደም ይችላል።
             </p>
 
             <div className="space-y-6 mb-10">
@@ -38,7 +37,7 @@ export default function Donation() {
                   </span>
                 </div>
                 <span className="text-lg">
-                  Student scholarships for underprivileged youth
+                  ከመድረሳው ጎን ለመስጂድነት የሚያገለግልን የቦታ ግዥ ማድረግ{" "}
                 </span>
               </div>
 
@@ -50,11 +49,10 @@ export default function Donation() {
                   </span>
                 </div>
                 <span className="text-lg">
-                  Expansion of our research library
+                  ትምህርትን በተሳለጠ መልኩ ለመስጠት ዘመናዊ መሣሪያዎችን በግዥ ለማስገባት{" "}
                 </span>
               </div>
             </div>
-            
           </div>
         </div>
       </div>

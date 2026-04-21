@@ -9,11 +9,11 @@ export default function Charity() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div>
             <h2 className="text-4xl font-serif font-bold text-[#012d1d] mb-4">
-              Charity in Action
+              ተጨማሪ ስራዎች
             </h2>
             <p className="text-[#414844] max-w-xl text-lg">
-              Our faith is lived through service. Witness the impact of your
-              contributions within our community.
+              ትውልድን በእውቀት እና በተርቢያ ከመቅረጽ በዘለለ በሌሎች ጉዳዮች በአካባቢው ላይ መልካም ተጽዕኖን
+              ማሳደር አንዱ የመድረሳችን መለያ ነው።
             </p>
           </div>
 
@@ -80,43 +80,28 @@ export default function Charity() {
             <img
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700 z-0"
               alt="Group of diverse community members working together"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfICTc7SlmMO6rek322-lzOR28jsA08m8qb_o54goHpC9EblsR8iQnAK3PgQjlRe59aYopTmkYOszh-puATBHtXd-nEZMhoL3m-wiuCbPPWZj7CUAOm-GgbGs0w-CpdDLUsopsP8tSqSn5p8QGZ_zYVdEc-ilkULWEtioJIVRnrP1t5sZJ5mN_sZ5UX8T6qOFXPMCB75kNe9-kGqZA-XaW7Idy4zG279apktxUf2xAKjGkmbvkBfj4dKL8SeiRCtkOHKeLI8Iq4qzL"
+              src="/musela.jpg"
             />
             {/* Gradient Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10"></div>
 
             <div className="absolute inset-0 flex flex-col justify-end p-6 z-20">
               <h3 className="text-2xl font-serif font-bold text-white mb-2">
-                Community Aid
+                ኑረል ኢስላም ሙሰላ
               </h3>
               <p className="text-gray-200 text-sm">
-                Ongoing social welfare programs and financial aid for local
-                families.
+                መድረሳው ለአምስቱ ወቅት ሰላት መስገጃነት እያገለገለ ይገኛል
               </p>
             </div>
           </div>
 
           {/* Item 4: STATISTIC / HIGHLIGHT CARD (Spans 1 column, 1 row) */}
-          <div className="md:col-span-1 md:row-span-1 rounded-3xl p-8 flex flex-col justify-center bg-[#012d1d] text-white shadow-lg h-[300px] md:h-full hover:-translate-y-2 transition-transform duration-500 relative overflow-hidden group">
-            {/* Background decorative icon */}
-            <span className="material-symbols-outlined text-[150px] absolute -right-6 -bottom-6 text-white opacity-5 group-hover:scale-110 transition-transform duration-700">
-              volunteer_activism
-            </span>
-
-            <div className="relative z-10">
-              <div className="bg-[#1b4332] w-12 h-12 rounded-full flex items-center justify-center mb-6">
-                <span className="material-symbols-outlined text-[#ffdcbd]">
-                  favorite
-                </span>
-              </div>
-              <h3 className="text-5xl font-serif font-bold text-[#ffdcbd] mb-3">
-                $50k+
-              </h3>
-              <p className="text-[#c1ecd4] font-medium">
-                Raised for emergency winter relief and orphan sponsorships this
-                year.
-              </p>
-            </div>
+          <div className="md:col-span-1 md:row-span-1 relative group rounded-3xl overflow-hidden shadow-lg h-[300px] md:h-full">
+            <img
+              className="w-full h-full object-cover"
+              src="/Item4.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>

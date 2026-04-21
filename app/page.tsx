@@ -17,7 +17,7 @@ export default function Home() {
       <Charity />
       <Donation />
       <Contact />
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 }
