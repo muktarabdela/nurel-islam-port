@@ -19,7 +19,7 @@ export default function Programs() {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 md:h-[650px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 md:h-[820px]">
           {/* MAIN CARD WITH VIDEO - Spans 2 Cols, 2 Rows */}
           <div className="md:col-span-2 md:row-span-2 bg-white rounded-3xl p-8 flex flex-col gap-6 hover:shadow-xl transition-all duration-500">
             <div>
@@ -68,9 +68,9 @@ export default function Programs() {
           </div>
 
           {/* SMALL CARD 1 WITH VIDEO (Updated UX) */}
-          <div className="bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 h-full">
+          <div className="bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 h-[25em]">
             {/* Top: Video */}
-            <div className="w-full aspect-video bg-black">
+            <div className="w-full aspect-video bg-black h-full">
               <iframe
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                 src="https://www.youtube.com/embed/r3UmgUpOR1Y?controls=1&rel=0&modestbranding=1"
@@ -97,9 +97,9 @@ export default function Programs() {
           </div>
 
           {/* SMALL CARD 2 WITH VIDEO (Updated UX) */}
-          <div className="bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 h-full">
+          <div className="bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 h-[25em]">
             {/* Top: Video */}
-            <div className="w-full aspect-video bg-black">
+            <div className="w-full aspect-video bg-black h-full">
               <iframe
                 className="w-full h-full"
                 src="https://www.youtube.com/embed/n7Tg4JqyPCY?controls=0&modestbranding=1&rel=0&showinfo=0"
