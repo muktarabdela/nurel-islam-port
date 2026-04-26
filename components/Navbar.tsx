@@ -46,6 +46,12 @@ export default function Navbar() {
             >
               ተጨማሪ
             </Link>
+                  <Link
+              href="/#classes"
+              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-md tracking-wide cursor-pointer"
+            >
+              ትምህርቶች
+            </Link>
             <Link
               href="/#contact"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-md tracking-wide cursor-pointer"
@@ -102,6 +108,12 @@ export default function Navbar() {
           >
             ተጨማሪ
           </Link>
+              <Link
+              href="/#charity"
+              className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-md tracking-wide cursor-pointer"
+            >
+              ተጨማሪ
+            </Link>
           <Link
             href="/#contact"
             onClick={() => setOpen(false)}
