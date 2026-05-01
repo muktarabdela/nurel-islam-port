@@ -32,8 +32,7 @@ export default function PaidClasses() {
               ኦንላይን የ ክፍያ ትምህርቶች
             </h2>
             <p className="text-on-surface-variant text-lg leading-relaxed mb-8">
-              Accelerate your learning with personalized, one-on-one sessions tailored specifically to your pace and level. Whether you are memorizing the Quran or studying classical texts, our dedicated instructors are here to guide you.
-            </p>
+አቅምን ባማከለ መልኩ ለሁሉም ተደራሽ የሚሆን ጥራት ያለው ትምህርት በተመረጡ ኡስታዞች በፈለጉት ሰአት ባሉበት ሆነው የሚከታተሉት ልዩ የትምህርት ዕድል            </p>
             
             {/* Key Information Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">

@@ -16,7 +16,7 @@ export default function Charity() {
               ማሳደር አንዱ የመድረሳችን መለያ ነው።
             </p>
           </div>
-
+{/* 
           <Link
             href="/charity"
             className="text-[#012d1d] font-bold flex items-center gap-2 group hover:text-[#2c1600] transition-colors bg-white px-6 py-3 rounded-full shadow-sm hover:shadow-md"
@@ -25,35 +25,38 @@ export default function Charity() {
             <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
               arrow_right_alt
             </span>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-4 md:auto-rows-[300px] gap-6">
           {/* Item 1: MAIN CARD (Spans 2 columns, 2 rows) */}
-          <div className="md:col-span-2 md:row-span-2 relative group rounded-3xl overflow-hidden shadow-lg h-[400px] md:h-full">
-            <img
-              className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-700 z-0"
-              alt="Long communal table set for a Ramadan Iftar gathering at dusk"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn8FNzrtr9CEykNl85eVHq2hER9Kui4nt4IK_DRHTmeGjGsTCkzLFUVWDPzL5kiuNka5RpVda1z2oK6g5EiIw_rULhd1Jw_JuH4lXMgTD0VXEgFUZlL-zh6EATU16N3qOYs9d2YiO1NujFYG5vHTXPjzLv4L_WxOHipWolZTYBKq4vUqT5qa27vMH8QX7E4eJCtBftdXPj_iJIiOA1LlNj7Ch2b7A2dZgg1J78IjjgzMBJDbBF4pp1zfRIBGAlhKcTF9DBRDoGn-I5"
-            />
-            {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#012d1d]/95 via-[#012d1d]/40 to-transparent z-10"></div>
+<div className="md:col-span-2 md:row-span-2 relative group rounded-3xl overflow-hidden shadow-lg h-[400px] md:h-full">
 
-            <div className="absolute inset-0 flex flex-col justify-end p-10 z-20">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-[#ffdcbd] text-[#2c1600] text-xs font-bold mb-4 uppercase tracking-wider w-max shadow-sm">
-                Annual Event
-              </span>
-              <h3 className="text-4xl font-serif font-bold text-white mb-3 shadow-sm">
-                Ramadan Iftar Program
-              </h3>
-              <p className="text-[#c1ecd4] text-lg max-w-md leading-relaxed">
-                Providing thousands of meals annually to those in need during
-                the blessed month. Bringing the community together, one meal at
-                a time.
-              </p>
-            </div>
-          </div>
+  {/* YouTube Video */}
+  <iframe
+              className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+              src="https://www.youtube.com/embed/KZ8qQBVmGyQ?controls=1&rel=0&modestbranding=1"
+              title="Charity Impact Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+
+  {/* Gradient Overlay */}
+  {/* <div className="absolute inset-0 bg-gradient-to-t from-[#012d1d]/95 via-[#012d1d]/40 to-transparent z-10 pointer-events-none"></div> */}
+
+  {/* Content */}
+  <div className="absolute inset-0 flex flex-col justify-end p-10 z-20 pointer-events-none">
+    <h3 className="text-4xl font-serif font-bold text-white mb-3 shadow-sm">
+      የረመዳን ኢፍጣር ፕሮግራም
+    </h3>
+    <p className="text-[#c1ecd4] text-lg max-w-md leading-relaxed">
+      ከተለያዩ ድርጅቶች ጋር በመቀናጀት ለአካባቢው ማህብረሰብ  የረመዳን ሙሉ ወር የኢፍጣር መጋራት ፕሮግራም በኑረል ኢስላም
+    </p>
+  </div>
+
+</div>
 
           {/* Item 2: VIDEO EMBED CARD (Spans 2 columns, 1 row) */}
           <div className="md:col-span-2 md:row-span-1 relative rounded-3xl overflow-hidden shadow-lg bg-black h-[300px] md:h-full group">
@@ -99,7 +102,7 @@ export default function Charity() {
           <div className="md:col-span-1 md:row-span-1 relative group rounded-3xl overflow-hidden shadow-lg h-[300px] md:h-full">
             <img
               className="w-full h-full object-cover"
-              src="/Item4.jpg"
+              src="/certifacte.jpg"
               alt=""
             />
           </div>

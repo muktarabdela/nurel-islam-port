@@ -109,10 +109,10 @@ export default function Navbar() {
             ተጨማሪ
           </Link>
               <Link
-              href="/#charity"
+              href="/#classes"
               className="text-[#012d1d]/70 hover:text-[#012d1d] transition text-md tracking-wide cursor-pointer"
             >
-              ተጨማሪ
+              ትምህርቶች
             </Link>
           <Link
             href="/#contact"
