@@ -19,8 +19,10 @@ export default function Programs() {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 md:h-[820px]">
-          {/* MAIN CARD WITH VIDEO - Spans 2 Cols, 2 Rows */}
+        {/* Removed fixed height md:h-[820px] and fixed rows md:grid-rows-2 to allow for expansion */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+          
+          {/* Row 1 & 2 Left: MAIN CARD WITH VIDEO */}
           <div className="md:col-span-2 md:row-span-2 bg-white rounded-3xl p-8 flex flex-col gap-6 hover:shadow-xl transition-all duration-500">
             <div>
               <h3 className="text-4xl font-serif font-bold text-[#012d1d] mb-3">
@@ -31,99 +33,142 @@ export default function Programs() {
                 ይሰጣል።
               </p>
             </div>
-
-            {/* Main Card Video Container */}
-            <div className="w-full flex-grow rounded-2xl overflow-hidden shadow-inner bg-black min-h-[250px] md:min-h-0 relative">
+            <div className="w-full flex-grow rounded-2xl overflow-hidden shadow-inner bg-black min-h-[300px] relative">
               <iframe
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                className="w-full h-full object-cover"
                 src="https://www.youtube.com/embed/zniLjRrHXxo?controls=1&rel=0&modestbranding=1"
-                title="Charity Impact Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                title="Quran Education"
                 allowFullScreen
               ></iframe>
             </div>
           </div>
 
-          {/* SECONDARY CARD - Spans 2 Cols, 1 Row (NO VIDEO - Kept Original Design) */}
+          {/* Row 1 Right: SECONDARY CARD (Image) */}
           <div className="md:col-span-2 bg-[#012d1d] rounded-3xl p-10 flex items-center justify-between group hover:shadow-xl transition-all duration-500 overflow-hidden relative min-h-[250px]">
             <div className="absolute inset-0 bg-gradient-to-r from-[#012d1d] via-[#012d1d]/90 to-transparent z-10"></div>
-
             <img
               className="absolute right-0 top-0 w-2/3 h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700 z-0"
               src={defaultImageUrl}
               alt="Islamic Book Studies"
             />
-
             <div className="relative z-20 max-w-sm text-white">
               <h3 className="text-3xl font-serif font-bold mb-3">የተለያዩ ኪታቦች</h3>
               <p className="text-[#c1ecd4] leading-relaxed">
                 የተለያዩ የእውቀት ዘርፎችን እንደየደረጃው መስጠት
               </p>
             </div>
-
             <span className="material-symbols-outlined text-6xl text-white opacity-40 group-hover:opacity-100 group-hover:rotate-12 transition-all relative z-20">
               menu_book
             </span>
           </div>
 
-          {/* SMALL CARD 1 WITH VIDEO (Updated UX) */}
-          <div className="bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 h-[25em]">
-            {/* Top: Video */}
-            <div className="w-full aspect-video bg-black h-full">
+          {/* Row 2 Right Middle: SMALL CARD 1 */}
+          <div className="bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 min-h-[400px]">
+            <div className="w-full h-full bg-black">
               <iframe
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
+                className="w-full h-full"
                 src="https://www.youtube.com/embed/r3UmgUpOR1Y?controls=1&rel=0&modestbranding=1"
-                title="Charity Impact Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                title="Children's Program"
                 allowFullScreen
               ></iframe>
             </div>
-            {/* Bottom: Text Content */}
             <div className="p-6 flex-grow flex flex-col justify-center bg-[#012d1d]">
               <div className="flex items-center gap-3 mb-2">
-                <div className="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow-sm">
-                  <span className="material-symbols-outlined text-[#7d562d]">
-                    child_care
-                  </span>
+                <div className="bg-white w-10 h-10 flex items-center justify-center rounded-full">
+                  <span className="material-symbols-outlined text-[#7d562d]">child_care</span>
                 </div>
-                <h4 className="font-serif font-bold text-xl text-white">
-                  የልጆች ጊዜ
-                </h4>
+                <h4 className="font-serif font-bold text-xl text-white">የልጆች ጊዜ</h4>
               </div>
               <p className="text-white text-sm">በእውቀትና በተግባር የታነፀን ትውልድ መቅረፅ</p>
             </div>
           </div>
 
-          {/* SMALL CARD 2 WITH VIDEO (Updated UX) */}
-          <div className="bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 h-[25em]">
-            {/* Top: Video */}
-            <div className="w-full aspect-video bg-black h-full">
+          {/* Row 2 Right End: SMALL CARD 2 */}
+          <div className="bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 min-h-[400px]">
+            <div className="w-full h-full bg-black">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/n7Tg4JqyPCY?controls=0&modestbranding=1&rel=0&showinfo=0"
-                title="Charity Impact Video"
-                frameBorder="0"
-                allow="autoplay; encrypted-media"
+                src="https://www.youtube.com/embed/n7Tg4JqyPCY?controls=1&rel=0&modestbranding=1"
+                title="Arabic Language"
                 allowFullScreen
               ></iframe>
             </div>
-            {/* Bottom: Text Content */}
             <div className="p-6 flex-grow flex flex-col justify-center bg-[#012d1d] text-white">
               <div className="flex items-center gap-3 mb-2">
-                <div className="bg-[#ffdcbd]/20 w-10 h-10 flex items-center justify-center rounded-full shadow-sm">
-                  <span className="material-symbols-outlined text-[#ffdcbd]">
-                    translate
-                  </span>
+                <div className="bg-[#ffdcbd]/20 w-10 h-10 flex items-center justify-center rounded-full">
+                  <span className="material-symbols-outlined text-[#ffdcbd]">translate</span>
                 </div>
-                <h4 className="font-serif font-bold text-xl">አረብኛ ቋንቋ ትምህርት</h4>
+                <h4 className="font-serif font-bold text-xl">አረብኛ ቋንቋ</h4>
               </div>
-              <p className="text-[#c1ecd4] text-sm">
-                ቁርአንን ለመገንዘብ አረብኛ ማወቅ መሰረታዊ ነገር ነው{" "}
-              </p>
+              <p className="text-[#c1ecd4] text-sm">ቁርአንን ለመገንዘብ አረብኛ ማወቅ መሰረታዊ ነው</p>
             </div>
           </div>
+
+          {/* --- NEW ROW START --- */}
+
+          {/* New Card 1: Wide Video Card (2 Cols) */}
+          <div className="md:col-span-2 bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 min-h-[400px]">
+            <div className="w-full h-full bg-black">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/VIDEO_ID_4"
+                title="Special Programs"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="p-8 flex-grow flex flex-col justify-center bg-[#2c1600] text-white">
+              <div className="flex items-center gap-4 mb-3">
+                <div className="bg-white/10 w-12 h-12 flex items-center justify-center rounded-full">
+                  <span className="material-symbols-outlined text-white">mosque</span>
+                </div>
+                <h3 className="text-2xl font-serif font-bold">የአዳሪ ተማሪዎች ፕሮግራም</h3>
+              </div>
+              <p className="text-gray-300">ከሩቅ ለሚመጡ ተማሪዎች ተከታታይ የዲን ትምህርት የሚሰጥበት ዘርፍ</p>
+            </div>
+          </div>
+
+          {/* New Card 2: Small Video Card (1 Col) */}
+          <div className="md:col-span-1 bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 min-h-[400px]">
+            <div className="w-full h-full bg-black">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/VIDEO_ID_5"
+                title="Women's Education"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="p-6 flex-grow flex flex-col justify-center bg-[#012d1d] text-white">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="bg-pink-500/20 w-10 h-10 flex items-center justify-center rounded-full">
+                  <span className="material-symbols-outlined text-pink-200">female</span>
+                </div>
+                <h4 className="font-serif font-bold text-lg">የሴቶች ልዩ ደርስ</h4>
+              </div>
+              <p className="text-[#c1ecd4] text-xs">ለእናቶችና ለእህቶች የተዘጋጁ ልዩ ትምህርቶች</p>
+            </div>
+          </div>
+
+          {/* New Card 3: Small Video Card (1 Col) */}
+          <div className="md:col-span-1 bg-white rounded-3xl overflow-hidden flex flex-col hover:shadow-xl transition-all duration-500 min-h-[400px]">
+            <div className="w-full h-full bg-black">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/VIDEO_ID_6"
+                title="Weekly Lectures"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="p-6 flex-grow flex flex-col justify-center bg-[#012d1d] text-white">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="bg-blue-500/20 w-10 h-10 flex items-center justify-center rounded-full">
+                  <span className="material-symbols-outlined text-blue-200">groups</span>
+                </div>
+                <h4 className="font-serif font-bold text-lg">ሳምንታዊ ሙሃደራ</h4>
+              </div>
+              <p className="text-[#c1ecd4] text-xs">በየሳምንቱ አርብ የሚሰጡ ጠቃሚ ምክሮችና ትምህርቶች</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
